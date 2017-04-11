@@ -1,0 +1,86 @@
+body, html {
+  background:
+	linear-gradient(
+		limegreen,
+		transparent
+	),
+	linear-gradient(
+		90deg,
+		skyblue,
+		transparent
+	),
+	linear-gradient(
+		-90deg,
+		coral,
+		transparent
+	);
+  
+  height: 100vh;	
+  background-blend-mode: screen;
+  font-size: 20px;
+  font-family: 'Antic';
+}
+
+p {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.w_container {
+  margin-top: 35px;
+  background: #15aa30;
+  color: #eee;
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 640px;
+}
+
+.w_container .w_icon {
+  position: relative;
+  height: 60px;
+  font-size: 65px;
+}
+
+.w_container .w_icon em {
+  display: block;
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+  font-size: 18px;
+}
+
+.w_container .w_icon emw {
+  display: block;
+  position: absolute;
+  right: -150px;
+  bottom: 10px;
+  font-size: 22px;
+}
+
+.w_container .temp-info {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+  cursor: pointer;
+  font-size: 38px;
+}
+
+.w_container .temp-info span {
+  font-size: 20px;
+}
+
+.w_container .country-info {
+  line-height: 60px;
+}
+
