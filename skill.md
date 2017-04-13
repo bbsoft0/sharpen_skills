@@ -1,7 +1,7 @@
 ========== Responsive Web Design ========== 
 
 Html and Html5  
-  <main>
+- `<main>`
 Css
 
 Applied Visual Design
