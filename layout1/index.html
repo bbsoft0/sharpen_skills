@@ -1,0 +1,231 @@
+<!--
+Author: Barbu Bujor
+Author URL: http://www.snipermed.com
+License: MIT License
+-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Snipermed | Home</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+     <!-- Custom Theme files -->
+    <link href="css/base.css" rel='stylesheet' type='text/css' />
+       <!-- Custom Theme files -->
+       <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+     <!---- start-smoth-scrolling---->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    </script>
+    <!----webfonts--->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!----start-top-nav-script---->
+    <script>
+      $(function() {
+        var pull    = $('#pull');
+          menu    = $('nav ul');
+          menuHeight  = menu.height();
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+        $(window).resize(function(){
+              var w = $(window).width();
+              if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+              }
+          });
+      });
+    </script>
+    <!----//End-top-nav-script---->
+  </head>
+
+  <body>
+<!----- start-header---->
+      <div id="home" class="header">
+          <div class="top-header">
+            <div class="container">
+            <div class="logo">
+              <a href="#">Snipermed</a>
+            </div>
+            <!----start-top-nav---->
+             <nav class="top-nav">
+              <ul class="top-nav">
+                <li class="active"><a href="#home" class="scroll">Home </a></li>
+                <li class="page-scroll"><a href="#work" class="scroll">Work</a></li>
+                <li class="page-scroll"><a href="#team" class="scroll">Team</a></li>
+                <li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+              </ul>
+              <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+            </nav>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <!----- //End-header---->
+
+      <div class="banner text-center">
+        <div class="container">
+          <div class="banner-info">
+            <h1><span>let us make</span> your lives easier</h1>
+            <p>We specialize in crafting awesome ideas for web, mobile and beyond.</p>
+            <label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
+          </div>
+        </div>
+      </div>
+
+
+<!---work--->
+      <div id="work" class="work">
+        <div id="work1" class="container">
+          <div class="head-one text-center">
+            <h2>featured work</h2>
+            <span> </span>
+            <p>Here you can find some of our latest works, to see the details of these works just click the thumbnails below.</p>
+          </div>
+          <!---works--->
+          <!---images-hover-effects--->
+          <script src="js/jquery.hoverGrid.js"></script>
+          <link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+          <script type="text/javascript">
+              $(document).ready(function() {
+                $('#whatever').hoverGrid();
+              });
+          </script>
+          <!---images-hover-effects--->
+          <div class="works">
+              <div id="whatever">
+                <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w1.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w2.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w3.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w4.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w5.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w6.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w7.png" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w8.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 work-grid">
+                    <div class="item">
+                        <img  src="images/w9.jpg" title="name" />
+                        <div class="caption" style="display: none;">
+                            <h2>Some Title</h2>
+                            <p>This is a caption to end all captions</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"> </div>
+              </div>
+          </div>
+           <div class="clearfix"> </div>
+          </div>
+        </div>
+          <!---//works--->
+
+          <!---footer--->
+          <div class="footer">
+            <div class="container">
+              <div class="footer-left">
+                <p><span>(C) 2017</span> Snipermed - All Rights Reserved</p>
+              </div>
+              <div class="footer-right">
+                <p>Template by <a href="#">Created by Barbu Bujor</a></p>
+                <script type="text/javascript">
+                  $(document).ready(function() {
+                    /*
+                    var defaults = {
+                        containerID: 'toTop', // fading element id
+                      containerHoverID: 'toTopHover', // fading element hover id
+                      scrollSpeed: 1200,
+                      easingType: 'linear'
+                    };
+                    */
+
+                    $().UItoTop({ easingType: 'easeOutQuart' });
+
+                  });
+                </script>
+                  <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+              </div>
+              <div class="clearfix"> </div>
+            </div>
+          </div>
+          <!---//footer--->
+
+  </body>
+</html>
